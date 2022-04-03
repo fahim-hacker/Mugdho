@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+/*Body & Section*/
+
+#Height-width{
+    width: 720px;
+    height: 1520px;
+}
+
+/* article date-p-1 & date-p-2*/
+
+#date-p1-p2{
+    height: 0px;
+    width: 0vw;
+    padding: 10px 10px 10px 10px ;
+    background-color: yellow;
+    font-size: 70px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: yellow 0 0 40px ;
+    
+}
+
+head{
+    display: none;
+}
+
+body{
+    background-color: black;
+}
+
+article.date-p-1{
+    animation: slide-down 2s forwards;
+    opacity: 0;
+}
+
+@keyframes slide-down{
+    0%{
+        height: 0vh;
+        width: 0vw;
+        opacity: 10%;
+    }
+    20%{
+        height: auto;
+        width: 0vh;
+        opacity: 100%;
+    }
+    70%{
+        height:auto;
+        width: 50vh;
+        display: none;
+    }
+}
+
+article.date-p-2{
+    opacity: 0;
+    animation: opacity-blind 5s forwards;
+    animation-delay: 3s;
+    box-shadow: yellow 0 0 70px;
+}
+
+@keyframes opacity-blind {
+    0%{
+        height: auto;
+        width: 50vw;
+        opacity: 0%;
+    }
+    15%{
+        height: auto;
+        width: auto;
+        opacity: 100%;
+    }
+    70%{
+        height: auto;
+        width: auto;
+        display: none;
+    }
+}
+
+.button {
+    height: auto;
+    width: 80vw;
+    padding: 10px 10px 10px 10px ;
+    background-color: yellow;
+    font-size: 70px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: yellow 0 0 40px ;
+    opacity: 0;
+    animation: click 5s forwards;
+    animation-delay: 9s;
+}
+
+@keyframes click{
+    0%{
+    opacity: 0;
+    }
+    20%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 100%;
+    }
+} 
+.button a{
+    text-decoration: none;
+    color: black;
+}
+
+
+script{
+    display: none;
+}
